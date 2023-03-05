@@ -1,0 +1,38 @@
+body {
+  font-family: calibri;
+}
+
+/* utility */
+.placeholder {
+  color: grey;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.errorMsg {
+  color: red;
+}
+
+form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.report-container {
+  width: 500px;
+  flex-grow: 5;
+  border: salmon 2px solid;
+  padding: 1rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+}

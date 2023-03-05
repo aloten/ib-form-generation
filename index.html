@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IB Form Generation</title>
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form>
+        <div class="input-container">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="name"/>
+        </div>
+          <div class="input-container">
+            <label for="pronouns">Pronouns</label>
+            <select name="pronouns" id="pronouns">
+              <option value="" selected class="placeholder">Select pronouns</option>
+              <option value="She/her">She/her</option>
+              <option value="He/his">He/his</option>
+              <option value="They/them">They/them</option>
+            </select>
+          </div>
+        <div class="input-container">
+          <label for="subject">Subject</label>
+          <select name="subject" id="subject">
+            <option value="" selected class="placeholder">Select a subject</option>
+            <option value="Enlish">English</option>
+            <option value="French">French</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="grade">Grade</label>
+          <select name="grade" id="grade">
+            <option value="" selected class="placeholder">Select a grade</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        </div>
+        <!-- <div class="input-container">
+          <label for="category1Rating">Category 1 Rating</label>
+          <select name="category 1 rating" id="category1Rating">
+            <option value="" selected class="placeholder">Select a category 1 rating</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="category2Rating">Category 2 Rating</label>
+          <select name="category 2 rating" id="category2Rating">
+            <option value="" selected class="placeholder">Select a category 2 rating</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="category3Rating">Category 3 Rating</label>
+          <select name="category 3 rating" id="category3Rating">
+            <option value="" selected class="placeholder">Select a category 3 rating</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div> -->
+        <div class="input-container submitBtnContainer">
+          <button type="button" onclick="onFormSubmit()" class="form-submit">Generate Report</button>
+        </div>
+      </form>
+      <div class="report-container">
+        <span id="generated-report-text">
+          The generated report will show here...
+        </span>
+      </div>
+    </main>
+  </body>
+</html>
